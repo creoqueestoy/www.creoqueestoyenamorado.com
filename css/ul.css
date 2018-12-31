@@ -1,0 +1,46 @@
+
+
+
+
+*{
+	box-sizing: border-box;
+}
+
+p, ul, li,a{
+    max-width: 40rem;
+    margin-bottom: 40;
+    list-style: none;
+    text-decoration: none;
+    position: relative;
+ 
+}
+
+p{
+    display: inline-block;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+img{
+    vertical-align: middle;
+   
+}
+
+.ulstyle{
+    display:block;
+    position: relative;
+    text-decoration: none; 
+    font-family: Helvetica, Verdana, 
+    sans-serif;
+    padding: 0.5rem;
+    background-color:rgb(147,112,219);
+    color: white;
+
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    
+}
+
+.ulstyle:hover, .ulstyle:focus{
+    background-color:rgb(50,50,50);
+}

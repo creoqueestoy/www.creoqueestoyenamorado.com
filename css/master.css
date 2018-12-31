@@ -1,0 +1,159 @@
+/* adopted from inlecture tut */
+ 
+*{
+	box-sizing: border-box;
+}
+
+.grid{
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.grid-col-1of4{
+	flex-basis: 100%;
+}
+/* 645px/16 = 40.3125em  */
+@media (min-width: 40.3125em){
+.grid-col-1of4{
+	flex-basis: 25%;
+}
+}
+
+.grid-col-1of3{
+   
+    flex-basis: 30%;
+    /* padding: 0.5rem; */
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    text-align: left;
+    
+}
+
+/* 670px/16 = 41.875em 
+@media (min-width: 41.875em){
+    .grid-col-1of3{
+        flex-basis: 33.33333%;
+    }
+    } */
+
+
+
+
+.grid-body{
+    display: flex;
+    -webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+
+
+
+body{
+    font-family: Helvetica, Verdana, 
+    sans-serif;
+    margin: 2rem;
+}
+
+h1{
+    font-size: 3rem;
+    margin-bottom: auto;
+    text-align: center;
+    padding: 0.5em;
+    margin: 0 auto;
+}
+
+h2{
+    font-size: 2.25rem;
+    margin-bottom: 0;
+}
+
+
+h3{
+    font-size: 1.6rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+
+
+img{
+    height: auto;
+    max-width: 100%;
+    width:100%;
+    padding: 0;   
+}
+
+
+
+.nav-main-item{
+    display: inline-block;
+    color: rgb(26, 24, 24);
+    
+    padding: 0.5rem;
+    text-decoration: none;
+
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    
+}
+
+/* .nav-main-item:hover, .nav-main-item:focus {
+    background-color: rgb(50,50,50);
+
+} */
+
+
+.masterbar{
+    display:block;
+    color: white;
+    background-color:rgb(134, 73, 119);
+    padding: 0.5rem;
+    text-decoration: none;
+
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+.masterbar:hover, .masterbar:focus{
+    background-color:rgb(50,50,50);
+}
+
+
+.centerimg{
+    margin: 0 auto;
+    text-align: left;
+   
+}
+
+
+.scroll-manager-container {
+    display: block;
+    width: 120%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    position: absolute;
+    margin-right: -14px;
+    /* background-color: rgba(255,255,255,.01); */
+    will-change: scroll-position;
+   
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+.headersub{
+    
+    padding: 0.5rem;
+    margin: 0 auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+    max-width: 80rem;
+    text-align: left;
+    /* margin-inline-start: 20rem; */
+}

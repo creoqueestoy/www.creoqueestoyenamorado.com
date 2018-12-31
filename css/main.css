@@ -1,0 +1,194 @@
+
+
+
+ /* adopted from inlecture tut */
+
+/* Mobile Styles */
+@media (max-width:400px){
+    .menu-header .submenu{
+       display: none;
+
+    }
+  
+  }
+  
+
+
+
+
+body{
+    font-family: Helvetica, Verdana, 
+    sans-serif;
+    margin: 2rem;
+}
+
+h1{
+    font-size: 3rem;
+    margin-bottom: auto;
+    text-align: center;
+    padding: 0.5em;
+    margin: 0 auto;
+}
+
+h2{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+
+h3{
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    margin: 0 auto;
+}
+
+h4{
+    font-size: 1.5rem;
+    
+}
+
+
+
+
+img{
+    height: auto;
+    max-width: 100%;
+    width:100%;
+    padding: 0;
+    
+}
+.imgli{
+    height:21rem;
+    width: 15rem;
+    padding: 1rem;
+}
+
+.menu-header .submenu {
+    display: none;
+    /* position: absolute;
+    top: 20em; */
+    position: fixed;
+    
+
+}
+
+.menu-header:hover .submenu {
+    display: block;
+
+}
+
+
+
+.nav-main-item{
+    display: inline-block;
+    color: rgb(26, 24, 24);
+    
+    padding: 0.5rem;
+    text-decoration: none;
+
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    
+}
+
+/* .nav-main-item:hover, .nav-main-item:focus {
+    background-color: rgb(50,50,50);
+
+} */
+
+.text{
+    float: left;
+    vertical-align: top;
+}
+.right-img{
+    float: right;
+}
+
+.masterbar{
+    display:block;
+    color: white;
+    background-color:rgb(147,112,219);
+    padding: 0.5rem;
+    text-decoration: none;
+
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+
+.masterbar:hover, .masterbar:focus{
+    background-color:rgb(50,50,50);
+}
+
+
+.EES-menu{
+    display:block;
+    color: white;
+    background-color:rgb(147,112,219);
+    padding: 0.5rem;
+    /* margin-inline-end: 0.5rem; */
+    text-decoration: none;
+
+
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+.EES-menu:hover, .EES-menu:focus{
+    background-color:rgb(50,50,50);
+}
+
+
+
+section-highlight{
+    background-color: rgb(147,112,219);
+}
+
+.centerimg{
+    display: inline-block;
+    margin: 0 auto;
+    text-align: left;
+   
+}
+
+.scroll-manager-container {
+    display: block;
+    width: 120%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    position: absolute;
+    margin-right: -14px;
+    /* background-color: rgba(255,255,255,.01); */
+    will-change: scroll-position;
+   
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+
+
+table, th, td {
+    border: none;
+    padding:0.5rem;
+
+ }
+th{
+    height: 50px;
+    text-align: left;
+}
+td {
+    height: 50px;
+    vertical-align: bottom;
+}
+ table {
+    border-collapse: collapse;
+    width:100%;
+}
